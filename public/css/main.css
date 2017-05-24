@@ -1,8 +1,7 @@
 body {
   margin: 0;
   background-color: white;
-  font-family: "Open sans";
-}
+  font-family: "Open sans"; }
 
 .turnt-header {
   display: flex;
@@ -15,80 +14,88 @@ body {
   background-color: #2F2235;
   align-items: center;
   padding-left: 40px;
-  padding-right: 40px;
-}
+  padding-right: 40px; }
 
 .h1-span {
   color: #34D1D1;
-  font-weight: 600;
-}
+  font-weight: 600; }
 
 .accordion-h1-container {
   display: flex;
   align-items: center;
-  margin: 40px;
-}
-
-.accordion-h1-container .accordion-h1 {
-  color: #2F2235;
-  padding: 10px 0;
-  font-size: 30px;
-  font-weight: 300;
-  font-size: 30px;
-}
-
-.accordion-h1-container .accordion-hr {
-  width: 100%;
-}
+  margin: 40px; }
+  .accordion-h1-container .accordion-h1 {
+    color: #2F2235;
+    padding: 10px 0;
+    font-size: 30px;
+    font-weight: 300;
+    font-size: 30px; }
+  .accordion-h1-container .accordion-hr {
+    width: 100%; }
 
 .yung-accordion-container {
   min-width: 320px;
   max-width: 800px;
   margin: 0 auto;
-  background: #fff;
-}
+  background: #fff; }
+  .yung-accordion-container .content {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #34D1D1; }
+    .yung-accordion-container .content .p-tag {
+      margin: 0 0 20px;
+      line-height: 1.5; }
+  .yung-accordion-container input {
+    display: none; }
+  .yung-accordion-container label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #bbb;
+    border: 1px solid transparent; }
+  .yung-accordion-container label:hover {
+    color: #34D1D1;
+    cursor: pointer; }
+  .yung-accordion-container input:checked + label {
+    color: #2F2235;
+    border: 1px solid #34D1D1;
+    border-top: 2px solid #34D1D1;
+    border-bottom: 1px solid white; }
+  .yung-accordion-container #tab1:checked ~ #content1,
+  .yung-accordion-container #tab2:checked ~ #content2,
+  .yung-accordion-container #tab3:checked ~ #content3,
+  .yung-accordion-container #tab4:checked ~ #content4,
+  .yung-accordion-container #tab5:checked ~ #content5 {
+    display: block; }
 
-.yung-accordion-container .content {
-  display: none;
-  padding: 20px 0 0;
-  border-top: 1px solid #34D1D1;
-}
-
-.yung-accordion-container .content .p-tag {
-  margin: 0 0 20px;
-  line-height: 1.5;
-}
-
-.yung-accordion-container input {
-  display: none;
-}
-
-.yung-accordion-container label {
-  display: inline-block;
-  margin: 0 0 -1px;
-  padding: 15px 25px;
-  font-weight: 600;
-  text-align: center;
-  color: #bbb;
-  border: 1px solid transparent;
-}
-
-.yung-accordion-container label:hover {
-  color: #34D1D1;
-  cursor: pointer;
-}
-
-.yung-accordion-container input:checked + label {
-  color: #2F2235;
-  border: 1px solid #34D1D1;
-  border-top: 2px solid #34D1D1;
-  border-bottom: 1px solid white;
-}
-
-.yung-accordion-container #tab1:checked ~ #content1,
-.yung-accordion-container #tab2:checked ~ #content2,
-.yung-accordion-container #tab3:checked ~ #content3,
-.yung-accordion-container #tab4:checked ~ #content4,
-.yung-accordion-container #tab5:checked ~ #content5 {
-  display: block;
-}
+.card-article {
+  width: 100%;
+  position: relative;
+  margin: 80px 0 0 0;
+  padding: 0 0 50px 0;
+  min-height: 600px; }
+  .card-article .flexy-grid {
+    margin: 50px 0 0 0;
+    padding: 0 0 50px 0;
+    min-height: 600px; }
+    .card-article .flexy-grid .flex-cards {
+      margin: 50px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+    .card-article .flexy-grid .grow {
+      min-width: 65%; }
+    .card-article .flexy-grid .card {
+      margin: 0 0 20px 0;
+      border: 1px solid grey;
+      padding: 5px;
+      max-width: 33%; }
+      .card-article .flexy-grid .card h3 {
+        padding: 0 10px; }
+    .card-article .flexy-grid .img {
+      display: block;
+      height: 250px;
+      width: 100%; }

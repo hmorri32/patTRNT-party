@@ -12,4 +12,16 @@ $bold: 600;
 $light: 300;
 
 
-
+@mixin turnt-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  font-weight: 300;
+  height: 50px;
+  font-size: 20px;
+  background-color: $darker-purpz;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}

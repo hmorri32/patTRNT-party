@@ -70,12 +70,17 @@ body {
   .yung-accordion-container #tab5:checked ~ #content5 {
     display: block; }
 
+.codepen-container {
+  width: 800px;
+  margin: auto; }
+
 .grid-of-cards {
   display: grid;
   grid-template-columns: 33% 15px 33% 15px 33%;
   grid-template-rows: auto 15px auto 15px auto;
   width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 40px; }
 
 .card {
   border: 1px solid #34D1D1; }
